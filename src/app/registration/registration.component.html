@@ -1,1 +1,165 @@
-<p>registration works !</p>
+<form [formGroup]="registrationForm">
+    <h3>Personal Details</h3>
+    <hr>
+    <div class="formgrid grid form-group">
+        <div class="field col-12 md:col-3">
+            <label for="salutation">Salutation: </label>
+            <select id="salutation" class="w-full inputfield form-control" style="appearance: auto"
+                formControlName="salutation" pInputText>
+                <option [selected]="true">Mr.</option>
+                <option>Miss.</option>
+                <option>Mrs.</option>
+            </select>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" class="inputfield w-full form-control" formControlName="firstName"
+                pInputText required>
+            <div
+                *ngIf="registrationForm.controls['firstName'].errors && registrationForm.controls['firstName'].touched">
+                <span *ngIf="registrationForm.controls['firstName'].errors['required']" style="color: red;">First Name
+                    is
+                    required</span>
+            </div>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="middleName">Middle Name:</label>
+            <input id="middleName" type="text" class="inputfield w-full form-control" formControlName="middleName"
+                pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" class="inputfield w-full form-control" formControlName="lastName"
+                pInputText>
+            <div *ngIf="registrationForm.controls['lastName'].errors && registrationForm.controls['lastName'].touched">
+                <span *ngIf="registrationForm.controls['lastName'].errors['required']" style="color: red;">Last Name is
+                    required</span>
+            </div>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="gender">Gender:</label>
+            <select id="gender" class="w-full inputfield form-control" style="appearance: auto" formControlName="gender"
+                pInputText>
+                <option [selected]="true">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Trans</option>
+                <option>Other</option>
+            </select>
+            <div *ngIf="registrationForm.controls['gender'].errors && registrationForm.controls['gender'].touched">
+                <span *ngIf="registrationForm.controls['gender'].errors['required']" style="color: red;">Gender is
+                    required</span>
+            </div>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="maritalStatus">Marital Status:</label>
+            <select id="maritalStatus" class="w-full inputfield form-control" style="appearance: auto"
+                formControlName="maritalStatus" pInputText>
+                <option [selected]="true">Select</option>
+                <option>Un-married</option>
+                <option>Married</option>
+            </select>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="dateOfBirth">Date Of Birth:</label>
+            <input id="dateOfBirth" type="date" class="inputfield w-full form-control" formControlName="dateOfBirth"
+                pInputText>
+            <div
+                *ngIf="registrationForm.controls['dateOfBirth'].errors && registrationForm.controls['dateOfBirth'].touched">
+                <span *ngIf="registrationForm.controls['dateOfBirth'].errors['required']" style="color: red;">Date Of
+                    Birth is
+                    required</span>
+            </div>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="country">Country:</label>
+            <input id="country" type="text" class="inputfield w-full form-control" formControlName="country" pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="state">State:</label>
+            <input id="state" type="text" class="inputfield w-full form-control" formControlName="state" pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="city">City:</label>
+            <input id="city" type="text" class="inputfield w-full form-control" formControlName="city" pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="address">Address:</label>
+            <textarea id="address" type="text" rows="1" class="inputfield w-full form-control" formControlName="address"
+                pInputTextarea></textarea>
+            <div *ngIf="registrationForm.controls['address'].errors && registrationForm.controls['address'].touched">
+                <span *ngIf="registrationForm.controls['address'].errors['required']" style="color: red;">Address is
+                    required</span>
+            </div>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="zipcode">Zipcode:</label>
+            <input id="zipcode" type="number" class="inputfield w-full form-control" formControlName="zipcode"
+                pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="mobileNumber">Mobile Number:</label>
+            <input id="mobileNumber" type="number" class="inputfield w-full form-control" formControlName="mobileNumber"
+                pInputText>
+            <div
+                *ngIf="registrationForm.controls['mobileNumber'].errors && registrationForm.controls['mobileNumber'].touched">
+                <span *ngIf="registrationForm.controls['mobileNumber'].errors['required']" style="color: red;">Mobile
+                    Number is
+                    required</span>
+            </div>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="officeNumber">Office Number:</label>
+            <input id="officeNumber" type="number" class="inputfield w-full form-control" formControlName="officeNumber"
+                pInputText>
+        </div>
+    </div>
+    <div class="educationalDetails mb-3">
+        <span style="vertical-align: middle; font-size: larger; font-weight: bolder;">Educational Details</span>
+        <button pButton type="button" label="Add" class="p-button-text" icon="pi pi-plus" style="float: right;"
+            (click)="addEducationalDetails()"></button>
+    </div>
+    <hr>
+    <div class="formgrid grid form-group" formArrayName="educationalDetails"
+        *ngFor="let educationalDetail of educationalDetails().controls; let i=index" [formGroupName]="i">
+        <!-- <div class="field col-12 md:col-3">
+            <label for="degree">Degree:</label>
+            <input id="degree" type="text" class="inputfield w-full form-control" formControlName="degree" pInputText>
+        </div> -->
+        <div class="field col-12 md:col-3">
+            <label for="specialization">Specialization:</label>
+            <input id="specialization" type="text" class="inputfield w-full form-control"
+                formControlName="specialization" pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="yearOfGraduation">Year of Graduation:</label>
+            <input id="yearOfGraduation" type="number" class="inputfield w-full form-control"
+                formControlName="yearOfGraduation" pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="percentage">Percentage:</label>
+            <input id="percentage" type="number" class="inputfield w-full form-control" formControlName="percentage"
+                pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="college">Colleage:</label>
+            <input id="college" type="text" class="inputfield w-full form-control" formControlName="college" pInputText>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="university">University:</label>
+            <input id="university" type="text" class="inputfield w-full form-control" formControlName="university"
+                pInputText>
+        </div>
+        <div>
+            <button pButton type="button" class="p-button-raised p-button-rounded p-button-danger" icon="pi pi-trash"
+                iconPos="right" style="float: right; margin-top: 20px;" (click)="removeEducationalDetails(i)"></button>
+        </div>
+    </div>
+    <div class="text-700 text-center">
+        <button pButton pRipple label="Submit"
+            class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap mr-2"></button>
+        <button pButton pRipple label="Reset"
+            class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"
+            (click)="registrationForm.reset()"></button>
+    </div>
+</form>

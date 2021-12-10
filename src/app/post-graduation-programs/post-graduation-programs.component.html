@@ -11,7 +11,7 @@
   <div class="grid">
     <div class="col-12 lg:col-4">
       <div class="p-3 h-full">
-        <p-card header="Cloud Computing" subheader="Post Graduation Program" [style]="{width: '360px'}"
+        <p-card header="Cloud Computing" subheader={{typeOfProgram|titlecase}} [style]="{width: '360px'}"
           styleClass="p-card-shadow">
           <ng-template pTemplate="header">
             <img alt="Card" src="assets/Images/California.jpg">
@@ -23,7 +23,7 @@
             </li>
             <li class="flex align-items-center mb-3">
               <i class="pi pi-clock text-gray-500 mr-2"></i>
-              <span>Cohort Starts : 11 Jan, 2022</span>
+              <span>Cohort Starts : {{startDate|date:'mediumDate'}}</span>
             </li>
           </ul>
           <ng-template pTemplate="footer">
@@ -34,7 +34,7 @@
     </div>
     <div class="col-12 lg:col-4">
       <div class="p-3 h-full">
-        <p-card header="Data Science" subheader="Post Graduation Program" [style]="{width: '360px'}"
+        <p-card header="Data Science" subheader={{typeOfProgram|titlecase}} [style]="{width: '360px'}"
           styleClass="p-card-shadow">
           <ng-template pTemplate="header">
             <img alt="Card" src="assets/Images/Purdue.jpg">
@@ -46,8 +46,12 @@
             </li>
             <li class="flex align-items-center mb-3">
               <i class="pi pi-clock text-gray-500 mr-2"></i>
-              <span>Cohort Starts : 11 Jan, 2022</span>
+              <span>Cohort Starts : {{startDate|date:'mediumDate'}}</span>
             </li>
+            <!-- <li class="flex align-items-center mb-3">
+              <i class="pi pi-clock text-gray-500 mr-2"></i>
+              <span>Cohort Ends : {{endDate|date:'mediumDate'}}</span>
+            </li> -->
           </ul>
           <ng-template pTemplate="footer">
             <img alt="Card" src="assets/Images/Purdue-Homepage.png">
@@ -57,7 +61,7 @@
     </div>
     <div class="col-12 lg:col-4">
       <div class="p-3 h-full">
-        <p-card header="Business Analysis" subheader="Post Graduation Program" [style]="{width: '360px'}"
+        <p-card header="Business Analysis" subheader={{typeOfProgram|titlecase}} [style]="{width: '360px'}"
           styleClass="p-card-shadow">
           <ng-template pTemplate="header">
             <img alt="Card" src="assets/Images/Purdue.jpg">
@@ -69,7 +73,7 @@
             </li>
             <li class="flex align-items-center mb-3">
               <i class="pi pi-clock text-gray-500 mr-2"></i>
-              <span>Cohort Starts : 11 Jan, 2022</span>
+              <span>Cohort Starts : {{startDate|date:'mediumDate'}}</span>
             </li>
           </ul>
           <ng-template pTemplate="footer">

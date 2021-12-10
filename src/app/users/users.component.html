@@ -1,0 +1,63 @@
+<p-table [value]="users">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Status</th>
+            <th><button pButton pRipple label="Add New" class="font-small p-button-sm white-space-nowrap"
+                    (click)="showModalDialog()"></button></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.name|uppercase}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.gender}}</td>
+            <!-- <td>{{user.dateOfBirth|age}}</td> -->
+            <td>{{user.status}}</td>
+            <td></td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<p-dialog header="Add New User" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [maximizable]="true"
+    [draggable]="false" [resizable]="false">
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8"
+        style="display: flex; justify-content: center; text-align: center;">
+        <div class="text-700 text-center">
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                <label for="name" class="block text-900 font-medium mb-2">Name</label>
+                <input id="name" type="text" pInputText class="w-full mb-3" formControlName="name">
+
+                <label for="email" class="block text-900 font-medium mb-2">Email</label>
+                <input id="email" type="text" pInputText class="w-full mb-3" formControlName="email">
+
+                <label for="gender" class="block text-900 font-medium mb-2">Gender</label>
+                <select id="gender" class="w-full mb-3 inputfield form-control" style="appearance: auto"
+                    formControlName="gender" pInputText>
+                    <option [selected]="true">Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Trans</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="status" class="block text-900 font-medium mb-2">Status</label>
+                <select id="status" class="w-full mb-3 inputfield form-control" style="appearance: auto"
+                    formControlName="status" pInputText>
+                    <option [selected]="true">Select</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+
+                <button pButton pRipple type="submit" label="Create User" class="w-full"></button>
+            </form>
+        </div>
+    </div>
+    <!-- <ng-template pTemplate="footer">
+        <p-button icon="pi pi-check" (click)="displayModal=false" label="Ok" styleClass="p-button-text"></p-button>
+    </ng-template> -->
+</p-dialog>

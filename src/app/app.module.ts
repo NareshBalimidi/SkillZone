@@ -16,6 +16,12 @@ import { ScrollPanelModule } from "primeng/scrollpanel";
 import { DialogModule } from 'primeng/dialog';
 import {ToastModule} from 'primeng/toast';
 import {CardModule} from 'primeng/card';
+import {InputTextareaModule} from 'primeng/inputtextarea'; 
+import {TableModule} from 'primeng/table';
+import {FileUploadModule} from 'primeng/fileupload';
+import {InputNumberModule} from 'primeng/inputnumber';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { PostGraduationProgramsComponent } from './post-graduation-programs/post-graduation-programs.component';
 import { MastersProgramsComponent } from './masters-programs/masters-programs.component';
@@ -26,6 +32,11 @@ import { EnrollmentComponent } from './enrollment/enrollment.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
+import { UsersComponent } from './users/users.component';
+import { AgePipe } from './pipes/age.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FileComponent } from './file/file.component';
+
 
 
 @NgModule({
@@ -39,7 +50,10 @@ import { LoginComponent } from './login/login.component';
     EnrollmentComponent,
     ContactUsComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    UsersComponent,
+    AgePipe,
+    FileComponent
   ],
   imports: [
     BrowserModule,
@@ -57,8 +71,16 @@ import { LoginComponent } from './login/login.component';
     DialogModule,
     ToastModule,
     CardModule,
+    InputTextareaModule,
+    TableModule,
+    FormsModule,
+    FileUploadModule,
+    ReactiveFormsModule,
+    InputNumberModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 

@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
+  contactUs = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submittingQuery(){
+    this.contactUs = false;
   }
 
 }
