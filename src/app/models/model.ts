@@ -71,3 +71,23 @@ export interface Product {
     rating?:number;
 }
 
+export interface PostGraduationPrograms {
+    id?:string;
+    programName?:string;
+    typeOfProgram?:string;
+    duration?:string;
+    startDate?:Date;
+    image?:string;
+
+}
+
+export interface MastersPrograms {
+    id?:string;
+    programName?:string;
+    duration?:string;
+    courses?:string;
+    typeOfProgram?:string;
+    tools?:string;
+    certificate?:string;
+}
+

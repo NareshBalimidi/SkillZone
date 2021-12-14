@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  offerBlock = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  closeBlock(){
+    this.offerBlock = false;
   }
 
 }

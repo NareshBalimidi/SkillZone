@@ -1,17 +1,25 @@
-<ng-template [ngIf]="contactUs" [ngIfElse]="elseBlock">
-    <h4>How may I help you?</h4>
-    <button pButton type="button" label="To Submit Query" (click)="submittingQuery()"></button>
-</ng-template>
-<ng-template #elseBlock>
-    <div class="surface-card p-4 shadow-2 border-round mb-3">
-        <div class="text-3xl font-medium text-900 mb-3">Contact Us</div>
-        <div class="font-medium text-500 mb-5">How may I help you ?</div>
-        <span class="p-float-label mb-3">
-            <textarea id="float-input" rows="5" cols="30" class="w-full mb-3" pInputTextarea></textarea>
-            <label for="float-input">You can place query here...</label>
-        </span>
-    </div>
-    <div class="text-700 text-center">
-        <button pButton pRipple label="Submit" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"></button>
-    </div>
-</ng-template>
+<div class="surface-card p-4 shadow-2 border-round mb-3">
+    <div class="text-3xl font-medium text-900 mb-3">Contact Us</div>
+    <div class="font-medium text-500 mb-5">How may I help you ?</div>
+    <span class="p-float-label mb-3">
+        <textarea id="float-input" rows="5" cols="30" class="w-full mb-3" pInputTextarea></textarea>
+        <label for="float-input">You can place query here...</label>
+    </span>
+    <p-fileUpload name="myfile[]"></p-fileUpload>
+</div>
+<div class="text-700 text-center">
+    <button pButton pRipple label="Submit"
+        class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"></button>
+</div>
+<!-- <p-toast></p-toast> -->
+
+<!-- <div class="card">
+    <h5>Advanced</h5>
+    <p-fileUpload name="demo[]" url="./upload.php" (onUpload)="onUpload($event)" accept="image/*">
+        <ng-template pTemplate="content">
+            <ul *ngIf="uploadedFiles.length">
+                <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+            </ul>
+        </ng-template>
+    </p-fileUpload>
+</div> -->

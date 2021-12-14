@@ -135,32 +135,3 @@
       routerLinkActive="active"></button>
   </div>
 </div>
-
-<div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-  <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [numScroll]="1" [circular]="true"
-    [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
-    <!-- <ng-template pTemplate="header">
-        <h5>Basic</h5>
-    </ng-template> -->
-    <ng-template let-product pTemplate="item">
-      <div class="product-item">
-        <div class="product-item-content"  style="background-color: white;">
-          <div class="p-mb-3">
-          </div>
-          <div>
-            <h4 class="p-mb-1">{{product.name}}</h4>
-            <h6 class="p-mt-0 p-mb-3">${{product.price}}</h6>
-            <span
-              [class]="'product-badge status-'+product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
-            <div class="car-buttons p-mt-5">
-              <p-button type="button" styleClass="p-button p-button-rounded p-mr-2" icon="pi pi-search"></p-button>
-              <p-button type="button" styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-star">
-              </p-button>
-              <p-button type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-cog"></p-button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-  </p-carousel>
-</div>

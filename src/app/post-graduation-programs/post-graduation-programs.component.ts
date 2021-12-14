@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { PostGraduationPrograms } from '../models/model';
+import { PostGraduationService } from '../services/post-graduation/post-graduation.service';
 
 @Component({
   selector: 'app-post-graduation-programs',
@@ -9,19 +10,34 @@ import { PostGraduationPrograms } from '../models/model';
 })
 export class PostGraduationProgramsComponent implements OnInit {
 
-  public typeOfProgram = "post graduation program";
-  public startDate = new Date("12/07/1995");
-  // public endDate = new Date("12/07/2031");
+  postGraduationPrograms!: PostGraduationPrograms[];
+	
+	responsiveOptions;
 
-  postGraduationPrograms: PostGraduationPrograms[] = [
-  { name: 'Cloud Computing', typeOfProgram: 'Post Graduation Program', duration: '12 Months' },
-  { name: 'Data Science', typeOfProgram: 'Post Graduation Program', duration: '11 Months'},
-  { name: 'Business Analysis', typeOfProgram: 'Post Graduation Program', duration: '24 Months'}]
+	constructor(private postGraduationService: PostGraduationService) { 
+		this.responsiveOptions = [
+            {
+                breakpoint: '1024px',
+                numVisible: 3,
+                numScroll: 3
+            },
+            {
+                breakpoint: '768px',
+                numVisible: 2,
+                numScroll: 2
+            },
+            {
+                breakpoint: '560px',
+                numVisible: 1,
+                numScroll: 1
+            }
+        ];
+	}
 
-  constructor(private httpClient: HttpClient) { }
-
-  ngOnInit(): void {
-
-  }
+	ngOnInit() {
+		this.postGraduationService.getPostGraduationPrograms().then(postGraduationPrograms => {
+			this.postGraduationPrograms = postGraduationPrograms;
+		});
+    }
 
 }

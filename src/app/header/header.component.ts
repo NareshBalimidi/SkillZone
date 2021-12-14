@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem, Message } from 'primeng/api';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +9,11 @@ import { MenuItem } from 'primeng/api';
 export class HeaderComponent implements OnInit {
 
   items: MenuItem[];
+  msgs1: Message[];
 
   constructor() {
-    this.items = []
+    this.items = [];
+    this.msgs1 = [];
   }
 
   ngOnInit() {
@@ -145,6 +147,9 @@ export class HeaderComponent implements OnInit {
         routerLink: '/registration',
       }
     ];
+    this.msgs1 = [
+      {severity:'success', summary:'Success', detail:'Message Content'},
+  ];
   }
 
 }

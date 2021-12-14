@@ -1,0 +1,164 @@
+{
+    "data":[
+        {
+			"id": "1",
+			"programName": "master of business administration (mba)",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-mba.jpg"
+		},
+        {
+			"id": "2",
+			"programName": "post graduate program in cloud computing",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "California.jpg"
+		},
+        {
+			"id": "3",
+			"programName": "post graduate program in data science",
+			"typeOfProgram": "post graduation program",
+			"duration": "6",
+			"startDate": "01/01/2022",
+			"image": "Purdue.jpg"
+		},
+        {
+			"id": "4",
+			"programName": "post graduate program in scm",
+			"typeOfProgram": "post graduation program",
+			"duration": "24",
+			"startDate": "01/01/2022",
+			"image": "Purdue.jpg"
+		},
+        {
+			"id": "5",
+			"programName": "post graduate program in business analysis",
+			"typeOfProgram": "post graduation program",
+			"duration": "18",
+			"startDate": "01/01/2022",
+			"image": "Purdue.jpg"
+		},
+        {
+			"id": "6",
+			"programName": "post graduate program in digital marketing",
+			"typeOfProgram": "post graduation program",
+			"duration": "11",
+			"startDate": "01/01/2022",
+			"image": "Purdue.jpg"
+		},
+        {
+			"id": "7",
+			"programName": "post graduate program in machine learning",
+			"typeOfProgram": "post graduation program",
+			"duration": "10",
+			"startDate": "01/01/2022",
+			"image": "Purdue.jpg"
+		},
+        {
+			"id": "8",
+			"programName": "post graduation program in blockchain",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-blockchain-iit-kanpur.jpg"
+		},
+        {
+			"id": "9",
+			"programName": "post graduate program in devops",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "California.jpg"
+		},
+        {
+			"id": "10",
+			"programName": "advanced executive program in cybersecurity",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-cyber-security.jpg"
+		},
+        {
+			"id": "11",
+			"programName": "post graduate program in project management",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-lean-six-sigma.jpg"
+		},
+        {
+			"id": "12",
+			"programName": "post graduate program in lean six sigma",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-lean-six-sigma.jpg"
+		},
+        {
+			"id": "13",
+			"programName": "post graduate program in web development",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "California.jpg"
+		},
+        {
+			"id": "14",
+			"programName": "post graduate program in data analytics",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "Purdue.jpg"
+		},
+        {
+			"id": "15",
+			"programName": "post graduate program in data engineering",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "Purdue.jpg"
+		},
+        {
+			"id": "16",
+			"programName": "post graduate program in digital marketing",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-digitai-marketing.jpg"
+		},
+        {
+			"id": "17",
+			"programName": "post graduate program in cyber security",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-cyber-security.jpg"
+		},
+        {
+			"id": "18",
+			"programName": "post graduate program in management",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-management.jpg"
+		},
+        {
+			"id": "19",
+			"programName": "post graduate program in digital transformation",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-data-transformation.jpg"
+		},
+        {
+			"id": "20",
+			"programName": "post graduation program in cloud computing",
+			"typeOfProgram": "post graduation program",
+			"duration": "12",
+			"startDate": "01/01/2022",
+			"image": "pg-cloud-computing.jpg"
+		}
+    ]
+}

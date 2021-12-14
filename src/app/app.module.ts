@@ -21,6 +21,9 @@ import {TableModule} from 'primeng/table';
 import {FileUploadModule} from 'primeng/fileupload';
 import {InputNumberModule} from 'primeng/inputnumber';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+import {CheckboxModule} from 'primeng/checkbox';
 
 
 import { PostGraduationProgramsComponent } from './post-graduation-programs/post-graduation-programs.component';
@@ -35,7 +38,6 @@ import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
 import { AgePipe } from './pipes/age.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FileComponent } from './file/file.component';
 
 
 
@@ -52,8 +54,8 @@ import { FileComponent } from './file/file.component';
     RegistrationComponent,
     LoginComponent,
     UsersComponent,
-    AgePipe,
-    FileComponent
+    AgePipe
+    
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,11 @@ import { FileComponent } from './file/file.component';
     FileUploadModule,
     ReactiveFormsModule,
     InputNumberModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MessagesModule,
+    MessageModule,
+    CheckboxModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

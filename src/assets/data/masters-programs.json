@@ -1,0 +1,148 @@
+{
+    "data":[
+        {
+            "id":"1",
+            "programName":"full stack developer",
+            "duration":"6",
+            "courses":"7",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"13 tools & 4 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"2",
+            "programName":"data science job gurantee bootcamp",
+            "duration":"6",
+            "courses":"10",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"11 tools & 6 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"3",
+            "programName":"digital marketing specialist",
+            "duration":"6",
+            "courses":"7",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"5 tools & 4 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"4",
+            "programName":"cloud architect",
+            "duration":"6",
+            "courses":"12",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"9 tools & 5 industry projects",
+            "certificate":"in collaboration with ibm"
+        },
+        {
+            "id":"5",
+            "programName":"artificial intelligence engineer",
+            "duration":"2",
+            "courses":"7",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"4 tools & 4 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"6",
+            "programName":"data scientist",
+            "duration":"10",
+            "courses":"7",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"2 tools & 6 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"7",
+            "programName":"pmp plus",
+            "duration":"6",
+            "courses":"6",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"13 tools & 4 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"8",
+            "programName":"lean sigma expert",
+            "duration":"5",
+            "courses":"14",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"10 tools & 5 industry projects",
+            "certificate":"in collaboration with ibm"
+        },
+        {
+            "id":"9",
+            "programName":"devops engineer",
+            "duration":"6",
+            "courses":"7",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"13 tools & 4 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"10",
+            "programName":"business analyst",
+            "duration":"6",
+            "courses":"9",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"13 tools & 12 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"11",
+            "programName":"digital project manager",
+            "duration":"6",
+            "courses":"10",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"7 tools & 4 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"12",
+            "programName":"full stack web developement",
+            "duration":"6",
+            "courses":"7",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"6 tools & 2 industry projects",
+            "certificate":"in collaboration with ibm"
+        },
+        {
+            "id":"13",
+            "programName":"data analyst",
+            "duration":"6",
+            "courses":"9",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"13 tools & 4 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"14",
+            "programName":"pmp renewal pack",
+            "duration":"6",
+            "courses":"7",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"10 tools & 6 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"15",
+            "programName":"cyber security expert",
+            "duration":"8",
+            "courses":"7",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"13 tools & 4 industry projects",
+            "certificate":"master's certificate"
+        },
+        {
+            "id":"16",
+            "programName":"big data engineer",
+            "duration":"8",
+            "courses":"10",
+            "typeOfProgram":"Skill Zone job gurantee program",
+            "tools":"6 tools & 4 industry projects",
+            "certificate":"in collaboration with ibm"
+        }
+    ]
+}

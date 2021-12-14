@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { PrimeNGConfig } from 'primeng/api';
 import { Response, User } from '../models/model';
-import { UserService } from '../services/user.service';
+import { UserService } from '../services/user/user.service';
 
 @Component({
   selector: 'app-users',
